@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Thousand Sunny - Explore and Travel</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="#" class="header__logo-link">
+                <img class="header__logo" src="images/logo.svg" alt="Thousand Sunny Logo" />
+            </a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Destinations</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Partner</a></li>
+                </ul>
+                <div class="nav__actions">
+                    <a href="#" class="button button--secondary nav__login">Login</a>
+                    <a href="#" class="button button--primary nav__register">Register</a>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container container--hero">
+                <form class="hero__panel" action="#" method="GET">
+                    <h1 class="title hero__title">Explore and Travel</h1>
+                    <p class="hero__subtitle">Holiday Finder</p>
+                    <hr class="hero__divider" />
+                    <div class="specs-grid">
+                        <div class="specs-grid__field">
+                            <select class="specs-grid__select" name="location" aria-label="Location">
+                                <option value="" disabled selected>Location</option>
+                            </select>
+                        </div>
+                        <div class="specs-grid__field">
+                            <select class="specs-grid__select" name="activity" aria-label="Activity">
+                                <option value="" disabled selected>Activity</option>
+                            </select>
+                        </div>
+                        <div class="specs-grid__field">
+                            <select class="specs-grid__select" name="grade" aria-label="Grade">
+                                <option value="" disabled selected>Grade</option>
+                            </select>
+                        </div>
+                        <div class="specs-grid__field">
+                            <select class="specs-grid__select" name="date" aria-label="Date">
+                                <option value="" disabled selected>Date</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="button button--primary hero__explore">Explore</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="explanation">
+            <div class="grey-area">
+                <div class="container container--explanation">
+                    <img class="explanation__image" src="images/Thousand-02 1.png" alt="Art of person parachuting using giant map pin" />
+                    <div class="explanation__content">
+                        <h2 class="title explanation__title">A new way to explore the world</h2>
+                        <p class="explanation__text">For decades travellers have reached for Lonely Planet books when looking to plan and execute their perfect trip, but now, they can also let Lonely Planet Experiences lead the way</p>
+                        <a href="#" class="button button--primary explanation__learn-more">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <div class="container container--destinations">
+                <div class="destinations__header">
+                    <h2 class="title destinations__title">Featured destinations</h2>
+                    <a href="#" class="destinations__view-all">View all &gt;</a>
+                </div>
+                <div class="travel-gallery">
+                    <a href="#" class="travel-gallery__link">
+                        <figure class="place-card place-card--indonesia">
+                            <figcaption class="place-card__caption">
+                                <p class="place-card__name">Raja Ampat</p>
+                                <p class="place-card__country">Indonesia</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="travel-gallery__link">
+                        <figure class="place-card place-card--china">
+                            <figcaption class="place-card__caption">
+                                <p class="place-card__name">Fanjingshan</p>
+                                <p class="place-card__country">China</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="travel-gallery__link">
+                        <figure class="place-card place-card--switzerland">
+                            <figcaption class="place-card__caption">
+                                <p class="place-card__name">Vevey</p>
+                                <p class="place-card__country">Switzerland</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="#" class="travel-gallery__link">
+                        <figure class="place-card place-card--montenegro">
+                            <figcaption class="place-card__caption">
+                                <p class="place-card__name">Skadar</p>
+                                <p class="place-card__country">Montenegro</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container container--footer">
+            <div class="footer__marks">
+                <img class="footer__logo" src="./images/logo.svg" alt="Thousand Sunny Logo">
+                <p class="footer__copyright">©2020 Thousand Sunny. All rights reserved</p>
+            </div>
+            <hr class="footer__divider" />
+            <div class="footer__icons">
+                <a href="#" class="icon icon--tw" aria-label="Twitter"></a>
+                <a href="#" class="icon icon--fb" aria-label="Facebook"></a>
+                <a href="#" class="icon icon--ins" aria-label="Instagram"></a>
+                <a href="#" class="icon icon--ld" aria-label="LinkedIn"></a>
+                <a href="#" class="icon icon--yt" aria-label="YouTube"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

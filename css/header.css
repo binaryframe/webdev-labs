@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 43px;
+    font-size: 16px;
+}
+
+.header__logo-link {
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 35px;
+}
+
+.nav__link {
+    color: #B8BECD;
+    transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link--active {
+    color: #202336;
+    font-weight: 600;
+}
+
+.nav__actions {
+    display: flex;
+    gap: 18px;
+}
+
+.nav__login,
+.nav__register {
+    width: 132px;
+    height: 44px;
+    line-height: 42px;
+}

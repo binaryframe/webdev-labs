@@ -1,0 +1,57 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #202336;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #202336;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.button--primary {
+    color: #ffffff;
+    background-color: #FB8F1D;
+    border-color: #FB8F1D;
+}
+
+.button--secondary {
+    color: #FB8F1D;
+    background-color: #ffffff;
+    border-color: #FB8F1D;
+}
