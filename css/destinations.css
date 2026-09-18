@@ -1,0 +1,137 @@
+.destinations {
+    min-height: 740px;
+}
+
+.container--destinations {
+    margin-top: 163px;
+    margin-bottom: 135px;
+}
+
+.destinations__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1120px;
+    margin-bottom: 56px;
+}
+
+.destinations__title {
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0;
+}
+
+.destinations__view-all {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 60px;
+    color: #FB8F1D;
+    transition: color 0.3s ease;
+}
+
+.destinations__view-all:hover {
+    color: #e57d10;
+}
+
+.travel-gallery {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.travel-gallery__link {
+    display: block;
+}
+
+.place-card {
+    width: 261px;
+    height: 332px;
+    border-radius: 8px;
+    margin: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.place-card__caption {
+    position: absolute;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    padding: 10px 25px 0 0;
+    border-top-right-radius: 8px;
+}
+
+.place-card__name {
+    font-size: 17px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+}
+
+.place-card__country {
+    font-size: 15px;
+    color: #7D7987;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.place-card--indonesia {
+    background-image: url("../images/image 1.png");
+}
+
+.place-card--china {
+    background-image: url("../images/image 2.png");
+}
+
+.place-card--switzerland {
+    background-image: url("../images/image 3.png");
+}
+
+.place-card--montenegro {
+    background-image: url("../images/image 4.png");
+}
+
+@media (max-width: 1200px) {
+    .travel-gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container--destinations {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .destinations__header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .destinations__title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .travel-gallery {
+        gap: 20px;
+    }
+    .place-card {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    .travel-gallery__link {
+        width: 100%;
+        max-width: 320px;
+    }
+}

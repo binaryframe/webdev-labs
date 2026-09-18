@@ -1,0 +1,109 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #ffffff;
+    color: #202336;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1219px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+.title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    color: #202336;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.button--primary {
+    color: #ffffff;
+    background-color: #FB8F1D;
+    border-color: #FB8F1D;
+}
+
+.button--primary:hover {
+    background-color: #e57d10;
+    border-color: #e57d10;
+}
+
+.button--secondary {
+    color: #FB8F1D;
+    background-color: #ffffff;
+    border-color: #FB8F1D;
+}
+
+.button--secondary:hover {
+    color: #ffffff;
+    background-color: #FB8F1D;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.animate-fade-in-delayed {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease 0.3s forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+    }
+}

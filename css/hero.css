@@ -1,0 +1,130 @@
+.hero {
+    position: relative;
+}
+
+.container--hero {
+    position: relative;
+    padding-bottom: 222px;
+    background-image: url("../images/thousand-01 1.png");
+    background-repeat: no-repeat;
+    background-position: top 72px right 105px;
+    background-size: 45%;
+}
+
+.hero__panel {
+    max-width: 471px;
+    padding-top: 105px;
+}
+
+.hero__title {
+    font-size: 64px;
+    line-height: 80px;
+    margin-top: 0;
+    margin-bottom: 74px;
+}
+
+.hero__subtitle {
+    font-weight: 700;
+    letter-spacing: 0;
+    font-size: 22px;
+    line-height: 100%;
+    margin-bottom: 21px;
+}
+
+.hero__divider {
+    margin: 0 0 48px 0;
+    height: 0;
+    width: 32px;
+    border: none;
+    border-top: 2px solid #000000;
+    border-radius: 2px;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    margin-bottom: 47px;
+}
+
+.specs-grid__field {
+    position: relative;
+}
+
+.specs-grid__select {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px 0 20px;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #4A4C53;
+    font-size: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../images/pointer.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.hero__explore {
+    width: 180px;
+    height: 52px;
+    line-height: 50px;
+}
+
+@media (min-width: 1600px) {
+    .container--hero {
+        background-size: 548px auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container--hero {
+        background-position: top 100px right 20px;
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container--hero {
+        background-image: none;
+        padding-bottom: 80px;
+    }
+
+    .hero__panel {
+        padding-top: 60px;
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero__divider {
+        margin: 0 auto 48px auto;
+    }
+
+    .hero__title {
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__explore {
+        width: 100%;
+    }
+}
