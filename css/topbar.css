@@ -1,0 +1,40 @@
+.topbar {
+    background-color: #fff;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.container--topbar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 60px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #999;
+}
+
+.tabs {
+    display: flex;
+    gap: 25px;
+    height: 100%;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #666;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.tab--active {
+    color: #222;
+    font-weight: bold;
+    border-bottom: 3px solid #2F80ED;
+}

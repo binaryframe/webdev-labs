@@ -1,0 +1,39 @@
+.container--main.layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px 30px;
+    align-items: flex-start;
+}
+
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.sidebar__title {
+    font-size: 22px;
+    margin: 0 0 20px 0;
+}
+
+.sidebar__label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.sidebar__select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.sidebar__divider {
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    margin: 20px 0;
+}
+
+.sidebar__result {
+    margin-top: 12px;
+    font-weight: bold;
+}

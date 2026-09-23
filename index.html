@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/search-panel.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <title>Lab 3</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container container--topbar">
+            <span class="brand">Svitlo</span>
+            <nav class="tabs">
+                <span class="tab tab--active">My Luminaires</span>
+            </nav>
+        </div>
+    </header>
+
+    <section id="search-panel" class="search-panel open">
+        <div class="container container--search">
+            <form class="search-form" action="javascript:void(0)">
+                <input id="header__search" class="search-input" placeholder="Search by manufacturer..." type="text">
+            </form>
+            <button id="header__search-btn" class="btn btn--outline" type="button">Search</button>
+            <button id="header__clear-btn" class="btn btn--outline btn--danger" type="button">Clear</button>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container container--main layout">
+            <aside class="sidebar">
+                <h2 class="sidebar__title">Manage luminaires</h2>
+
+                <label class="sidebar__label" for="header__sort">Sort by</label>
+                <select id="header__sort" class="sidebar__select">
+                    <option value="">None</option>
+                    <option value="0">Type (A-Z)</option>
+                    <option value="1">Power</option>
+                    <option value="2">LED bulb count</option>
+                </select>
+
+                <hr class="sidebar__divider">
+
+                <p class="sidebar__label">Count total power:</p>
+                <button id="header__count" class="btn btn--primary">Count</button>
+                <p id="view_total-power" class="sidebar__result">Total power: 0 W</p>
+            </aside>
+
+            <section id="view" class="panel view open">
+                <h2 id="view__title" class="panel__title">Luminaires</h2>
+                <div class="card-grid" id="film-grid"></div>
+                <p id="view_count" class="panel__count">Count: 0</p>
+            </section>
+        </div>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
