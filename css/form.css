@@ -1,0 +1,51 @@
+.container--main {
+    padding: 40px 30px;
+}
+
+.page {
+    display: none;
+}
+
+.page.open {
+    display: block;
+}
+
+.create,
+.edit {
+    background-color: #fff;
+    border: 1px solid #E0E0E0;
+    border-radius: 6px;
+    padding: 40px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.go-back {
+    border: none;
+    background: none;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.form__title {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+}
+
+.form__label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    font-size: 15px;
+}
