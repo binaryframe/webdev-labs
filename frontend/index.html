@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/search-panel.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/dialog.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js"></script>
+    <title>Lab 4</title>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container container--topbar">
+            <span class="brand">Svitlo</span>
+            <nav class="tabs">
+                <button id="tab-view" class="tab tab--active" type="button">My Luminaires</button>
+                <button id="header__create" class="tab" type="button">Create Luminaire</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="search-panel" class="search-panel open">
+        <div class="container container--search">
+            <form class="search-form" action="javascript:void(0)">
+                <input id="header__search" class="search-input" placeholder="Search by manufacturer..." type="text">
+            </form>
+            <button id="header__search-btn" class="btn btn--outline" type="button">Search</button>
+            <button id="header__clear-btn" class="btn btn--outline btn--danger" type="button">Clear</button>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container container--main">
+
+            <section id="view" class="page view open">
+                <div class="view-layout">
+                    <aside class="sidebar">
+                        <h2 class="sidebar__title">Manage luminaires</h2>
+
+                        <label class="sidebar__label" for="header__sort">Sort by</label>
+                        <select id="header__sort" class="sidebar__select">
+                            <option value="">None</option>
+                            <option value="0">Type (A-Z)</option>
+                            <option value="1">Power</option>
+                            <option value="2">LED bulb count</option>
+                        </select>
+
+                        <hr class="sidebar__divider">
+
+                        <p class="sidebar__label">Count total power:</p>
+                        <button id="header__count" class="btn btn--primary">Count</button>
+                        <p id="view_total-power" class="sidebar__result">Total power: 0 W</p>
+                    </aside>
+
+                    <div class="panel">
+                        <h2 id="view__title" class="panel__title">Luminaires</h2>
+                        <div class="card-grid" id="film-grid"></div>
+                        <p id="view_count" class="panel__count">Count: 0</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="create" class="page create">
+                <button id="create__go-back" class="go-back" type="button">&lt- Go back</button>
+                <form action="" class="form">
+                    <h2 class="form__title">Create luminaire</h2>
+
+                    <label class="form__label" for="create__type">Type</label>
+                    <select class="form__input" id="create__type" required>
+                        <option value="">Select type</option>
+                        <option>Panel Light</option>
+                        <option>Street Light</option>
+                        <option>Downlight</option>
+                        <option>Flood Light</option>
+                        <option>Track Light</option>
+                        <option>High Bay Light</option>
+                    </select>
+
+                    <label class="form__label" for="create__power">Power (W)</label>
+                    <input class="form__input" id="create__power" type="number" min="1" step="1" value="5" required>
+
+                    <label class="form__label" for="create__led-count">Number of LED bulbs</label>
+                    <input class="form__input" id="create__led-count" type="number" min="1" step="1" value="1"
+                        required>
+
+                    <label class="form__label" for="create__manufacturer">Manufacturer name</label>
+                    <input class="form__input" id="create__manufacturer" type="text" placeholder="Enter manufacturer"
+                        required>
+
+                    <button type="button" id="create__create" class="btn btn--primary btn--block">Submit</button>
+                </form>
+            </section>
+
+            <section id="edit" class="page edit">
+                <button id="edit__go-back" class="go-back" type="button">&lt- Go back</button>
+                <form action="" class="form">
+                    <h2 class="form__title">Edit luminaire</h2>
+
+                    <label class="form__label" for="edit__type">Type</label>
+                    <select class="form__input" id="edit__type" required>
+                        <option value="">Select type</option>
+                        <option>Panel Light</option>
+                        <option>Street Light</option>
+                        <option>Downlight</option>
+                        <option>Flood Light</option>
+                        <option>Track Light</option>
+                        <option>High Bay Light</option>
+                    </select>
+
+                    <label class="form__label" for="edit__power">Power (W)</label>
+                    <input class="form__input" id="edit__power" type="number" min="1" step="1" required>
+
+                    <label class="form__label" for="edit__led-count">Number of LED bulbs</label>
+                    <input class="form__input" id="edit__led-count" type="number" min="1" step="1" required>
+
+                    <label class="form__label" for="edit__manufacturer">Manufacturer name</label>
+                    <input class="form__input" id="edit__manufacturer" type="text" placeholder="Enter manufacturer"
+                        required>
+
+                    <input id="edit__id" type="hidden">
+                    <button id="edit__edit" type="button" class="btn btn--primary btn--block">Save changes</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <div id="dialog" class="dialog">
+        <div class="dialog__box">
+            <p class="dialog__message">Oh snap! Please fill in all fields correctly and try again.</p>
+            <button id="dialog__close" class="dialog__close">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>

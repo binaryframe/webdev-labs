@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F7F8FA;
+    color: #222;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+.btn--outline {
+    background-color: #fff;
+    color: #2F80ED;
+    border-color: #2F80ED;
+}
+
+.btn--outline.btn--danger {
+    color: #E74C3C;
+    border-color: #E74C3C;
+}
+
+.btn--primary {
+    background-color: #2F80ED;
+    color: #fff;
+}
+
+.btn--block {
+    width: 100%;
+    margin-top: 20px;
+}
