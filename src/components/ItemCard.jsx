@@ -1,0 +1,16 @@
+import { useNavigate } from 'react-router-dom';
+import ImagePlaceholder from './ImagePlaceholder';
+import PrimaryButton from './PrimaryButton';
+
+export default function ItemCard({ item }) {
+  const navigate = useNavigate();
+  return (
+    <div className="card">
+      <ImagePlaceholder className="card__img" />
+      <h3>{item.name}</h3>
+      <p className="card__text">{item.type} · {item.power} W · {item.manufacturer}</p>
+      <div className="card__price"><strong>Price:</strong> <span>${Number(item.price).toFixed(2)}</span></div>
+      <PrimaryButton onClick={() => navigate(`/catalog/${item.id}`)}>View more</PrimaryButton>
+    </div>
+  );
+}
